@@ -33,8 +33,13 @@
 
     <div class="new-task">
 
-      <input  placeholder="Nuovo task"type="text">
-      <button >Aggiungi</button>
+      <!-- 4 newTask -->
+      <input
+      placeholder="Nuovo task"type="text" 
+      v-model.trim="newTask"
+      @keyup.enter="addNewTask">
+      <!-- 5 -->
+      <button @click="addNewTask">Aggiungi</button>
       <p class="error"></p>
     </div>
 
@@ -47,7 +52,7 @@
           <span :class="{ 'completed': task.done }">
             {{ task.thingsToDo }}
           </span>
-          <i class="fa-solid fa-trash-can"></i>
+          <!-- <i class="fa-solid fa-trash-can"></i> -->
         </li>
         <!-- <li>
           <span>task....</span>

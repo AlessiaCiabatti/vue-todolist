@@ -11,7 +11,7 @@ Questa volta però ogni todo sarà un oggetto, formato da due proprietà:
 
 2. Stampare all’interno di una lista HTML un item per ogni todo.
   - Se la proprietà done è uguale a true, visualizzare il testo del todo sbarrato.
-    - css proprietà done per barrare gli elementi
+    - css proprietà completed per barrare gli elementi
 
 3. Visualizzare a fianco ad ogni item ha una “x”: cliccando su di essa, il todo viene rimosso dalla lista.
 

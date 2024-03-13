@@ -19,3 +19,7 @@ Questa volta però ogni todo sarà un oggetto, formato da due proprietà:
   - cliccando sul pulsante, il testo digitato viene letto e utilizzato per creare un nuovo todo, che quindi viene aggiunto alla lista dei todo esistenti
 
 5. Oltre al click sul pulsante, intercettare anche il tasto ENTER per aggiungere il todo alla lista
+
+## BONUS
+
+6. esporre un messaggio di errore se il testo inserito ha meno di 4 caratteri

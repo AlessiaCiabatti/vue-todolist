@@ -24,6 +24,8 @@ createApp({
 
       // 4
       newTask: '',
+      // 5
+      errorMessage: '',
 
     }
   },
@@ -39,12 +41,17 @@ createApp({
     // 4
     addNewTask(){
       console.log('aggiungi');
-      //  unshift: aggiunge all'inizio e non alla fine
-      // tra le graffe perchè aggiungi un oggetto e non una stringa
-      this.todoList.unshift({
-        thingsToDo: this.newTask, 
-        done: false
-    });
+      // 6
+      if(this.newTask.length > 4){
+        //  unshift: aggiunge all'inizio e non alla fine
+        // tra le graffe perchè aggiungi un oggetto e non una stringa
+        this.todoList.unshift({
+          thingsToDo: this.newTask, 
+          done: false
+        });
+      }else{
+        this.errorMessage = 'Il testo deve avere più di 4 acartteri!'
+      }
 
       // dopo l'invio rimane vuoto
       this.newTask = '';

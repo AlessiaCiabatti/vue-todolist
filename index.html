@@ -44,7 +44,9 @@
     </div>
 
     <div class="task-container">
-      <ul>
+      <!-- 6 -->
+      <!-- 8 -->
+      <ul v-if="todoList.length > 0">
         <!-- 2 ciclo for e aggiungi classe completed solo allo span! -->
         <li v-for="(task, indice) in todoList">
           <!-- 3 al click si elimina -->
@@ -69,6 +71,8 @@
         </li> -->
 
       </ul>
+      <!-- 8 -->
+      <h2 class="text-center" v-else>Non sono presenti task</h2>
 
     </div>
 

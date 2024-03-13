@@ -23,3 +23,5 @@ Questa volta però ogni todo sarà un oggetto, formato da due proprietà:
 ## BONUS
 
 6. esporre un messaggio di errore se il testo inserito ha meno di 4 caratteri
+
+7. cliccando sul testo dell’item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa)

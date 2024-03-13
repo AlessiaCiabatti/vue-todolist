@@ -37,6 +37,11 @@ createApp({
       // 3 splice, 1: elimina solo un solo elemento e restituisce l'array con gli elementi rimanenti
       this.todoList.splice(indice, 1);
     },
+    // 7
+    toggleTask(task){
+
+      task.done = !task.done;
+    },
 
     // 4
     addNewTask(){
@@ -55,6 +60,6 @@ createApp({
 
       // dopo l'invio rimane vuoto
       this.newTask = '';
-    }
+    },
   }
 }).mount('#app');

@@ -64,7 +64,7 @@ img{
 .task-container li:hover{
   background-color: white;
 }
-.task-container li i{
+.task-container li .fa-trash-can{
   float: right;
   line-height: 40px;
   cursor: pointer;

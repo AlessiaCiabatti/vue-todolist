@@ -22,5 +22,14 @@ createApp({
         },
       ]
     }
+  },
+
+  // 3
+  methods:{
+    eliminaTask(indice){
+      console.log(indice);
+      // 3 splice, 1: elimina solo un solo elemento e restituisce l'array con gli elementi rimanenti
+      this.todoList.splice(indice, 1);
+    }
   }
 }).mount('#app');
